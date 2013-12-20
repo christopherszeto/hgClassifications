@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	background: #FFE5C2;  /* url(/images/floret.jpg);*/
+	font-family: verdana, arial, sans-serif;
+}
+
+h2
+{
+	margin: 0em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h3
+{
+    margin: 0.1em;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+	font-family: serif;
+}
+
+
+.titleBar
+{
+	background: #2435CE;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	font-size: 1.25em;
+	width: 1000px;
+	margin-left: 25px;
+	border:solid 2px white;
+	/* margin: auto; */
+}
+
+#error
+{
+	text-align: center;
+	background: white;
+	color: red;
+	display: none;
+	font-size: small;
+	border: 1px red dashed;
+}
+
+.warning
+{
+    text-align: center;
+    background: white;
+    color: blue;
+    font-size: small;
+    border: 1px blue dashed;
+}
+
+#loading
+{
+	position: fixed;
+	width: 100px;
+	height: 20px;
+	z-index: 5;
+	right: 0px;
+	bottom: 0px;
+	background: #EFF5FF;
+	text-align: center;
+	display: none;
+	cursor:wait;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#mainPanel {
+	z-index: 1002;
+}
+
+/*Button formating for table*/
+.tableButton:hover {
+	background-color: #929292;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+    cursor: pointer;
+}
+
+.tableButton {
+    background-color: #CFCFCF;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+	border: 1px #999999 solid;
+}
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+    background-color:#000;
+    border:1px solid #fff;
+    padding:10px 15px;
+    display:none;
+    color:#fff;
+    font-size:12px;
+	z-index: 10;
+
+    /* outline radius for mozilla/firefox only */
+    -moz-box-shadow:0 0 10px #000;
+    -webkit-box-shadow:0 0 10px #000;
+}

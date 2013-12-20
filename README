@@ -1,0 +1,22 @@
+This code is designed to build, analyze, and visualize predictive models. This code
+is dependent on the kent/src libraries. The kent/src tools are available here:
+http://hgdownload.cse.ucsc.edu/admin/jksrc.zip
+
+It's necessary to download and install kent/src before attempting to build any of 
+these tools. 
+
+HOW TO INSTALL PREDICTION TOOLS
+cd predictors
+make
+
+HOW TO INSTALL TOPMODEL WEB UI
+cd hgClassificationsViewer
+make
+
+HOW TO INSTALL RESULTS LOADERS
+cd hgClassificationsViewer
+make loadClassificationResults
+
+HOW TO INSTALL PREDICTORPRINT UI
+cd hgPredictorPrint
+make

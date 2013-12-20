@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	background: #FFE5C2;  /* url(/images/floret.jpg);*/
+	font-family: verdana, arial, sans-serif;
+}
+
+h2
+{
+	margin: 0em;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h3
+{
+    margin: 0.1em;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+	font-family: serif;
+}
+
+
+.titleBar
+{
+	background: #2435CE;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	font-size: 1.25em;
+	width: 1000px;
+	margin-left: 25px;
+	border:solid 2px white;
+	/* margin: auto; */
+}
+
+#error
+{
+	text-align: center;
+	background: white;
+	color: red;
+	display: none;
+	font-size: small;
+	border: 1px red dashed;
+}
+
+#loading
+{
+	position: fixed;
+	width: 100px;
+	height: 20px;
+	z-index: 5;
+	right: 0px;
+	bottom: 0px;
+	background: #EFF5FF;
+	text-align: center;
+	display: none;
+	cursor:wait;
+}
+
+.hidden
+{
+	display: none;
+}
+
+#mainPanel {
+	z-index: 1002;
+}
+
+.taskTitle {
+    background: #536ED3;
+    color: white;
+	height: 25px;
+}
+
+.pane {
+	background:white; 
+	text-align: center;
+}
+
+.dataTables_wrapper {
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 0.6em;
+    font-weight: bold;
+	padding: 10px;
+}
+
+/*Stuff for dataTables formating*/
+tr.odd { background-color: #D5E5FF; }
+tr.even { background-color: #A8C8FF; }
+td { padding: 5px; }
+
+/*Quick hack for stat tables in job summaries*/
+.statTable { height:80px; text-align:center; width:100px; float:right; font-size:0.6em; }
+
+/*Button formating for table*/
+.tableButton:hover {
+	background-color: #929292;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+    cursor: pointer;
+}
+
+.tableButton {
+    background-color: #CFCFCF;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+	border: 1px #999999 solid;
+}
+
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+    background-color:#000;
+    border:1px solid #fff;
+    padding:10px 15px;
+    width:200px;
+    display:none;
+    color:#fff;
+    text-align:left;
+    font-size:12px;
+
+    /* outline radius for mozilla/firefox only */
+    -moz-box-shadow:0 0 10px #000;
+    -webkit-box-shadow:0 0 10px #000;
+}
+

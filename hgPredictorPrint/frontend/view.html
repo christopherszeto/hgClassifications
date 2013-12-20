@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html>
+<head>
+ <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+ <script type="text/javascript" src="js/jquery-ui-1.8.9.custom.min.js"></script>
+ <script type="text/javascript" src="js/hgPredictorPrint.js"></script>
+ <script type="text/javascript" src="js/jquery.form.js"></script>
+ <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+ <script type="text/javascript" src="js/figue.js"></script>
+ 
+ <script type="text/javascript"> 
+  $(document).ready(function() { 
+	setUp(); 
+  }); 
+ </script>
+ <meta http-equiv="Content-Type" content="text/html;CHARSET=iso-8859-1">
+ <meta http-equiv="Content-Script-Type" content="text/javascript">
+ <meta http-equiv="Pragma" content="no-cache">
+ <meta http-equiv="Expires" content="-1">
+ <title>UCSC PredictorPrint - A Cancer Classification Tool</title>
+ <link rel="stylesheet" href="css/jquery-ui-1.8.9.custom.css" type="text/css">
+ <link rel="stylesheet" href="css/hgPredictorPrint.css" type="text/css">
+ <link rel="stylesheet" href="css/jquery.jqplot.min.css" type="text/css">
+
+</head> 
+<body>
+
+<!-- overall div -->
+<div style='margin-left: 25px; margin-right:25px'>
+
+ <!-- div that gets shown when bad stuff happens -->
+ <div id='error' class='ui-state-error ui-corner-all hidden'>
+ Sorry, an error has occurred!
+ <br>Generally, a <a href="javascript: location.reload(true);">refresh</a>
+ will solve any problems you're having.<br>
+ If you continue to experience issues, 
+ please contact <a href="mailto:cszeto@soe.ucsc.edu">cszeto@soe.ucsc.edu</a>
+ with the following information:<br>
+ <pre id='errorMsg'>
+ </pre>
+ If you would like to hide this message and try to continue anyway,
+ click <a href="javascript: void(0);" onclick="$('#error').hide();">here</a>.
+ </div>
+ <!-- end error div -->
+ 
+ <!-- warning div-->
+ <div id='warning' class='ui-state-error ui-corner-all hidden' style="font-size: 0.75em;" onclick="$(this).hide();">
+ <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: 0.3em;"></span><strong>Alert:  </strong><span id='warningText'></span> (click to hide)
+ </p></div>
+ <!-- end warning div -->
+ <div id="mainPanel"></div>
+ <div id="summaryPanel"></div>
+
+</body>
+</html>
+

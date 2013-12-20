@@ -1,0 +1,3 @@
+NMFpredictor	NA
+SVMlight	-t 0
+SVMlight	-t 1

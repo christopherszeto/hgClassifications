@@ -1,0 +1,32 @@
+	<p>
+	There are many ways to adress the same biological questions: Use of different datasets,
+	different classification algorithms, different ways to assign class labels, etc. This results in a huge
+	number of classification results. This online tool is designed to allow browsing those results easy. 
+	</p>
+	<br>
+	<p>
+	Get used to this pop-up window. This is the main display in this online tool. Any time you click
+	on a gray button this pop-up will display your desired information. To get rid of this window, 
+	either click the 'x' in the top right to close this or hit the 'esc' key on your keyboard.
+	</p>
+	<br>
+	<br>
+	<p>
+	<b>Description of TopModel functionality</b><br>
+	<img width=875px src='css/images/topmodel_tutorial.png'>
+	<p>
+	<b>TopModel Web Interface:</b> (a) TopModel presents each classification task as a clickable bar. Under each bar is a sortable and searchable table of all the classifiers and parameters used to build predictive models for this task. "Basal vs. Luminal" is shown, sorting models by descending accuracy in held-out samples from 5x5 cross-validation.
+	</p>
+	<br>
+	<p>
+	<b>TopModel provides several summary views:</b> (b) Clicking the "View Tasks Overview" button gives a report of the best, worst and median accuracy for each task. Inside each task there are similar summary plots to see which dataset, (c), and which classification algorithm, (d), predicts this challenge with the highest accuracy. (e) The "Features Summary" reports a metagene list of which features are most highly used in accurate predictions for this task.
+	</p>
+	<br>
+	<p>
+	<b>TopModel provides many ways to drill in to each model:</b> (f) The "Veiw Samples" button for each model will summarize the subgroups used to train the model and the individual performance of each sample. (g) For linear models top features can be viewed. One click applies these feature weights as a molecular signature to datasets in the UCSC cancer genomics browser. The example shown here (h) is a Basal vs. Luminal signature showing high separation in the training dataset (TCGA BRCA), as well as high separation and correct assignments in an independent breast cancer dataset, and breast cancer cell lines. The model classifies almost all TCGA OV samples as basal-like. (i) There is the option to apply the fully-trained model to your own data. The TopModel interface will show the prediction scores for your samples compared to the background of samples used for training the model. It will also report how many features from the original model matched your user-submitted data. 
+	</p>	
+	<br>
+	<br>
+	<p>
+	If you have any issues or feature requests please <a href='mailto:cszeto@soe.ucsc.edu'>email Chris</a>.
+	</p>

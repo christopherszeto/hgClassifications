@@ -1,0 +1,26 @@
+<b>Description of PredictorPrint functionality</b>
+<br>
+<img src='css/images/predictorPrint_tutorial.png' width=700px>
+<br>
+<p>
+<b>PredictorPrint web interface:</b> After data submission, a heatmap of (a) top models by (b) user samples is displayed. Each cell of the heatmap is colored from green (significantly low scoring) to red (significantly high scoring). The standardized scores and sample names can be viewed by mousing over each cell. 
+<br>
+<br>
+<b>PredictorPrint provides objective assessment of significance:</b>  Each score reported in PredictorPrint is in relation to a precomputed background distribution. (c) To ensure that precomputed background is relevant to user-submitted data, up to three random permutations are created from the user-submitted data and displayed in PredictorPrint. If one of these user-data derived permutations falls outside the significance margin it is marked with an 'X', signifying the model is unreliable for this dataset.
+<br>
+<br>
+By clicking the 'Configure Display' button, the user can manipulate the display options (d). Options include filtering out models that the user-data does not provide enough features for, and hiding the permutation columns and sample names. The user can also set their own significance margins, which will adjust the colors in the heatmap and reassess the user-data derived permutations on-the-fly.
+<br>
+<br>
+In order to determine the provenance of each top model, the details for each model are available for viewing under the '?' button next to each task name (f). These details include the prediction accuracy in cross-validation, which may also be too low for a user's consideration.
+<br>
+<br>
+Once the user is satisfied with their significance thresholds they may wish to remove unreliable or uninteresting models. Each row can be removed from the heatmap by clicking the grey-boxed 'x' on the left of the task name. 
+<br>
+<br>
+<b>PredictorPrint as a discovery tool:</b> Each cell in the PredictorPrint heatmap represents a prediction on a novel sample, however there is often structure in the overall heatmap that can be leveraged for discovery. By clicking any of the grey buttons alongside the rows or above the columns, the heatmap will be sorted by that feature. Additionally the user can choose to cluster the heatmap using the clustering options tool (e). In the example shown above the coherent green cluster in the upper-right are all drug-predictions on TCGA GBM samples based on tests in the Cancer Cell Line Encyclopedia (CCLE) data, whereas all the non-coherent samples are a mix of TCGA ovarian and breast samples. This suggests GBM in general may be sensitive to some of the drugs tested in the CCLE cell lines.
+</p>
+<br>
+<p>
+If you have any issues or feature requests please <a href='mailto:cszeto@soe.ucsc.edu'>email Chris</a>.
+</p>
